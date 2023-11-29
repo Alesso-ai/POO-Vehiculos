@@ -28,4 +28,13 @@ furgoneta1.mostrarDatos();
 furgoneta1.arrancar();
 furgoneta1.acelerar(120);
 furgoneta1.frenar();
-furgoneta1.pasajeros(8);
+
+console.log(furgoneta1.marca);
+
+//Todoterreno
+const todoterreno1 = new Todoterrenos('Mercedes','Gwagone','Azul',2000,'2000',)
+todoterreno1.mostrarDatos();
+mostrarResultado('<br/> Traccion: ' + todoterreno1.traccion);
+todoterreno1.arrancar();
+todoterreno1.acelerar(150);
+todoterreno1.frenar();

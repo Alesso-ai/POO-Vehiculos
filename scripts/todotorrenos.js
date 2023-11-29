@@ -3,7 +3,7 @@ import { Vehiculo } from "./vehiculo.js";
 export class Todoterrenos extends Vehiculo {
   #traccion;
 
-  constructor(marca, modelo, color, fabricacion, cilidandra, traccion) {
+  constructor(marca, modelo, color, fabricacion, cilindrada, traccion) {
     super(marca, modelo, color, fabricacion, cilindrada);
     this.#traccion = traccion;
   }
