@@ -1,7 +1,7 @@
 // Lo primero que hay que hacer es la clase Vehiculo
 // Para hacer PRIVADOS los atributos, se utiliza # antes del nombre del atributo
 // Extendemos la clase con extends
-
+import { mostrarResultado } from "./main.js";
 export class Vehiculo {
   #marca;
   #modelo;
@@ -41,7 +41,7 @@ export class Vehiculo {
   acelerar(velocidad) {
     const mensaje = `<br/>Se ha acelerado hasta -> ${velocidad}`;
     //Llamamos a la funcion de mostrar resultado
-    mostrarResultado(`<p>${datos}</p>`);
+    mostrarResultado(`<p>${mensaje}</p>`);
   }
 
   //Metodo arrancar
@@ -49,7 +49,7 @@ export class Vehiculo {
     const mensaje = `<br/>El coche ${this.#marca},${this.modelo},de color ${
       this.color
     } ha arrancado`;
-    mostrarResultado(`<p>${datos}</p>`);
+    mostrarResultado(`<p>${mensaje}</p>`);
   }
 
   //Metodo frenar
@@ -57,7 +57,7 @@ export class Vehiculo {
     const mensaje = `<br/>El coche ${this.#marca},${this.modelo},de color ${
       this.color
     } ha parado`;
-    mostrarResultado(`<p>${datos}</p>`);
+    mostrarResultado(`<p>${mensaje}</p>`);
   }
 
   //Getters y setters
