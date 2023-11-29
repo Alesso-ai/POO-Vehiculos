@@ -1,0 +1,19 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+  p{
+    color: rgb(255, 253, 253);
+    font-family:Nova Square;
+
+  }
+  body{
+    /*Ruta de la imagen*/
+    background-image: url('../assets/imgs/Gtr.jpg');
+    /*Cubrir todo el fondo con la imagen cover*/
+    background-size: cover;
+    /*evitar que se repita*/
+    background-repeat: no-repeat;
+    /*Imagen Fija*/
+    background-attachment: fixed;
+    
+  }

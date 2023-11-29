@@ -32,7 +32,7 @@ furgoneta1.frenar();
 console.log(furgoneta1.marca);
 
 //Todoterreno
-const todoterreno1 = new Todoterrenos('Mercedes','Gwagone','Azul',2000,'2000',)
+const todoterreno1 = new Todoterrenos('Mercedes','Gwagone','Azul',2000,'2000','Trasera')
 todoterreno1.mostrarDatos();
 mostrarResultado('<br/> Traccion: ' + todoterreno1.traccion);
 todoterreno1.arrancar();
