@@ -15,7 +15,7 @@ export class Vehiculo {
     this.#marca = marca;
     this.#modelo = modelo;
     this.#color = color;
-    this.#fabricacion = fabricacion;
+    this.#fabricacion = fabricacion
     this.#cilindrada = cilindrada;
   }
 
