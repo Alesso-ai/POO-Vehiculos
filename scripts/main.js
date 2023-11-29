@@ -15,8 +15,17 @@ export function mostrarResultado(mensaje) {
 
 //Muestra de un objeto de vehiculos
 const vehiculo1 = new Vehiculo('Mercedes','AMG','Negro',2012,'3000');
-mostrarResultado('--Vehiculos1--');
+mostrarResultado('<--Deportivo-->');
 vehiculo1.mostrarDatos();
 vehiculo1.arrancar();
 vehiculo1.acelerar(200);
 vehiculo1.frenar();
+
+//Furgoneta 1
+const furgoneta1 = new Furgoneta('Mercedes','VITO','Blanca',1999,'2000',8);
+mostrarResultado('<--Furgoneta-->');
+furgoneta1.mostrarDatos();
+furgoneta1.arrancar();
+furgoneta1.acelerar(120);
+furgoneta1.frenar();
+furgoneta1.pasajeros(8);
