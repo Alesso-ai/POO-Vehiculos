@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
   p{
-    color: rgb(255, 253, 253);
+    color: rgb(243, 242, 245);
     font-family:Nova Square;
 
   }
@@ -16,4 +16,23 @@
     /*Imagen Fija*/
     background-attachment: fixed;
     
+  }
+
+  /*KeyFrames*/
+  @keyframes moverImagen{
+    from{
+        transform: translateX(-100);
+    }
+    to{
+        transform:translateX(1000%);
+    }
+  }
+
+  #miCochecito{
+    width:150px;
+    height:100px;
+    background-image: url('../assets/Favicon.ico');
+    background-size: cover;
+    animation: moverImagen 4s linear infinite;
+
   }
