@@ -24,14 +24,14 @@
         transform: translateX(-100);
     }
     to{
-        transform:translateX(1000%);
+        transform: translateX(850%);
     }
   }
 
   #miCochecito{
     width:150px;
     height:100px;
-    background-image: url('../assets/Favicon.ico');
+    background-image: url('../assets/imgs/veneno.jpg');
     background-size: cover;
     animation: moverImagen 4s linear infinite;
 
