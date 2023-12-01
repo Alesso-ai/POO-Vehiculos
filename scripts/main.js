@@ -29,7 +29,9 @@ furgoneta1.arrancar();
 furgoneta1.acelerar(120);
 furgoneta1.frenar();
 
-console.log(furgoneta1.marca);
+//Guardar unicamente en el LccalStorage un atributo en este caso la marca de una furgoneta
+ 
+localStorage.setItem("marca furgoneta", furgoneta1.marca)
 
 //Todoterreno
 const todoterreno1 = new Todoterrenos('Mercedes','Gwagone','Azul',2000,'2000','Trasera')
@@ -38,3 +40,48 @@ mostrarResultado('<br/> Traccion: ' + todoterreno1.traccion);
 todoterreno1.arrancar();
 todoterreno1.acelerar(150);
 todoterreno1.frenar();
+
+//Variable de tipo Object de un objeto vehiculo
+
+const vehiculoObject = {
+    marca: 'Mercedes',
+    modelo: 'AMG',
+    color: 'Negro',
+    fabricacion: 2012,
+    cilindrada:'3000'
+}
+
+//Almacenar datos - Guardar el JSON en el LOcalStorage
+localStorage.setItem("vehiculo",JSON.stringify(vehiculoObject));
+
+//Recuperar datos- Mostrar el object en consola del JSON que hemos guardado en el LocalStorage
+
+console.log(JSON.parse(localStorage.getItem("vehiculo")));
+
+//Generar variable tipo object con POO
+const todoterrenoObject = {
+    marca: "Mercedes",
+    modelo: "Gwagone",
+    color:"Azul",
+    fabricacion: 2000,
+    traccion: "Trasera"
+}
+
+//Almacenar los datos en LocalStorage mediante un bucle
+
+for(let key in todoterrenoObject){
+    //hasOwnProperty lo utilizamos para almacenar el nombre de la propiedad de cada objeto
+
+    if(todoterrenoObject.hasOwnProperty(key)){
+        localStorage.setItem(key,todoterrenoObject[key]);
+    }
+
+}
+
+//Eliminar un elemento del localStorage
+
+localStorage.removeItem('color');
+localStorage.removeItem('marca');
+
+//Quitar todo del tiron
+localStorage.clear();
